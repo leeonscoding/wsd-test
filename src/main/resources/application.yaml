@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: wsd-test
+  profiles:
+    active: dev
