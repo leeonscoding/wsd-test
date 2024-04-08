@@ -1,6 +1,7 @@
 package com.leeonscoding.wsdtest.entities;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,8 +10,6 @@ import lombok.NoArgsConstructor;
 import java.util.Set;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Builder
 @Entity
 @Table(name = "tbl_user")
@@ -19,6 +18,7 @@ public class User extends Base {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    @Email
     @Column(nullable = false, unique = true)
     private String email;
     @Column(nullable = false)
