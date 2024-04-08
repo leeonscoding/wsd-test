@@ -1,8 +1,7 @@
-package com.leeonscoding.wsdtest;
+package com.leeonscoding.wsdtest.repository;
 
 import com.leeonscoding.wsdtest.entities.Role;
 import com.leeonscoding.wsdtest.entities.User;
-import com.leeonscoding.wsdtest.repository.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
