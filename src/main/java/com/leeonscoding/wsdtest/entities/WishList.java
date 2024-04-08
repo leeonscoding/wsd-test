@@ -1,9 +1,13 @@
 package com.leeonscoding.wsdtest.entities;
 
 import jakarta.persistence.*;
+import lombok.Builder;
+import lombok.Data;
 
 import java.util.List;
 
+@Data
+@Builder
 @Entity
 public class WishList extends Base {
 
